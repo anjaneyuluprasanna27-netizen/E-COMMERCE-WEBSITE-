@@ -1,0 +1,28 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -18px rgba(23,22,26,0.25);
+}
+
+.add-btn {
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  width: 34px; height: 34px; border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.add-btn:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: rotate(90deg);
+}

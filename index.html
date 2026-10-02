@@ -1,0 +1,16 @@
+<div class="grid" id="product-grid">
+  {% for product in products %}
+  <div class="card" data-genre="{{ product.genre }}">
+    <div class="art" style="background:{{ product.bg_color }}20;">{{ product.emoji }}</div>
+    <div class="body">
+      <span class="genre">{{ product.genre }}</span>
+      <h3>{{ product.title }}</h3>
+      <span class="artist">{{ product.artist }}</span>
+      <div class="row">
+        <span class="price">${{ product.price }}</span>
+        <button class="add-btn" onclick="addToCart({{ product.id }})">+</button>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
